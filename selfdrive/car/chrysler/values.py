@@ -7,9 +7,9 @@ class CarControllerParams:
   STEER_STEP = 1          # LKAS steering commands sent at 100Hz
   HUD_STEP = 25           # HUD updates sent at 4Hz
 
-  STEER_MAX = 384         # Observed factory LKAS hitting 306.  Raising to find threshold. 
-  STEER_DELTA_UP = 5      # Factory LKAS ramps up at 5 per ms, have not tested more
-  STEER_DELTA_DOWN = 5    # Factory LKAS ramps down at 5 per ms, have not tested more, more is probably possible
+  STEER_MAX = 261         # Observed factory LKAS hitting 306.  Raising to find threshold.
+  STEER_DELTA_UP = 3      # Factory LKAS ramps up at 5 per ms, have not tested more
+  STEER_DELTA_DOWN = 3    # Factory LKAS ramps down at 5 per ms, have not tested more, more is probably possible
   STEER_ERROR_MAX = 80    # FIXME: is this actually needed/usable for anything besides Toyota?
   STEER_DRIVER_ALLOWANCE = 80
   STEER_DRIVER_MULTIPLIER = 3    # weight driver torque heavily
